@@ -3,16 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Room Rentals</title>
+<title>BAGHEL NIKETAN (Room Rent)</title>
 
 <style>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f5f7fa;
+    background: #FFFACD;
 }
 
-/* NAVBAR */
 nav {
     background: #0f172a;
     color: white;
@@ -20,21 +19,18 @@ nav {
     text-align: center;
 }
 
-/* HERO */
 .hero {
-    background: linear-gradient(to right, #0f172a, #2563eb);
+    background: linear-gradient(to right, #1E293B, #2563eb);
     color: white;
     text-align: center;
     padding: 50px 20px;
 }
 
-/* SECTION */
 .section {
     padding: 30px 15px;
     text-align: center;
 }
 
-/* CARDS */
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -42,7 +38,7 @@ nav {
 }
 
 .card {
-    background: white;
+    background: #FFFACD;
     width: 320px;
     margin: 15px;
     border-radius: 10px;
@@ -82,14 +78,8 @@ nav {
 .prev { left: 5px; }
 .next { right: 5px; }
 
-/* CONTENT */
-.card h3 {
-    margin: 10px;
-}
-
-.card p {
-    padding: 0 10px;
-}
+.card h3 { margin: 10px; }
+.card p { padding: 0 10px; }
 
 .price {
     color: green;
@@ -97,7 +87,6 @@ nav {
     font-size: 18px;
 }
 
-/* BUTTONS */
 .btn {
     display: block;
     margin: 10px;
@@ -108,11 +97,8 @@ nav {
     border-radius: 5px;
 }
 
-.whatsapp {
-    background: #25D366;
-}
+.whatsapp { background: #25D366; }
 
-/* FOOTER */
 footer {
     background: #0f172a;
     color: white;
@@ -126,7 +112,7 @@ footer {
 <body>
 
 <nav>
-    <h2>My Room Rentals</h2>
+    <h2>BAGHEL NIKETAN (Room Rent)</h2>
 </nav>
 
 <section class="hero">
@@ -137,38 +123,41 @@ footer {
 <section class="section">
 <div class="cards">
 
-<!-- ROOM CARD START -->
 <div class="card">
 
 <!-- IMAGE SLIDER -->
 <div class="slider">
     <img class="slide active" src="room1.jpg">
-    <img class="slide" src="room1-2.jpg">
-    <img class="slide" src="room1-3.jpg">
+    <img class="slide" src="room2.jpg">
+    <img class="slide" src="room3.jpg">
 
     <button class="prev" onclick="changeSlide(this, -1)">❮</button>
     <button class="next" onclick="changeSlide(this, 1)">❯</button>
 </div>
 
-<h3>Room 1 (Edit)</h3>
+<h3>Rooms</h3>
 
-<!-- VIDEO (YouTube) -->
+<!-- ✅ OPTION 1: VIDEO FILE (RECOMMENDED) -->
+<video width="100%" height="180" controls>
+    <source src="roomvideo.mp4" type="video/mp4">
+</video>
+
+<!-- ✅ OPTION 2: YOUTUBE (USE ONLY ONE, DELETE ABOVE IF USING THIS)
 <iframe width="100%" height="180"
 src="https://www.youtube.com/embed/VIDEO_ID"
 frameborder="0" allowfullscreen></iframe>
+-->
 
-<p>📍 Location: KABIR NAGAR, SINGHARIYA, GORAKHPUR, 273008
-<br>
-<a href="https://maps.app.goo.gl/SuBW15SQecdBjtVW6" target="_blank">
+<p>📍 Location: KABIR NAGAR, SINGHARIYA, GORAKHPUR, 273008<br>
+<a href="https://maps.app.goo.gl/JMc9tgLMMoiGdeFT9" target="_blank">
 View on Map
 </a>
 </p>
 
-<p>🛏 Benefits: Nearest to AIIMS, Airport, MMM university,Railway Station, Bus Stand, etc.  (Edit)</p>
+<p>🛏 Benefits : Nearest to AIIMS, Airport, MMM University, Railway Station, Bus Stand</p>
 
-<p class="price">₹8000 / month (Edit)</p>
+<p class="price">₹8000 / month</p>
 
-<!-- BUTTONS -->
 <a href="https://wa.me/919554446781" class="btn whatsapp" target="_blank">
 WhatsApp Now
 </a>
@@ -178,13 +167,12 @@ Call Now
 </a>
 
 </div>
-<!-- ROOM CARD END -->
 
 </div>
 </section>
 
 <footer>
-    <p>© 2026 Room Rentals | Contact: 9554446781</p>
+    <p>© BAGHEL NIKETAN | Contact: 9554446781</p>
 </footer>
 
 <script>
